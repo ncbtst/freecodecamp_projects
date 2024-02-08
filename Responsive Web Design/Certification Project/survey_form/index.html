@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheets" href="styles.css"/>
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description"> Help us improve our platform by taking a short survey.</p>
+    <div>
+      <form id="survey-form">
+
+  <!-- Text/number input -->  
+        <label for="name" id="name-label">Name <input id="name" type="text" placeholder="Enter your name" required/></label>
+        <label for="email" id="email-label">Email <input id="email" type="email" placeholder="Enter your email" required/></label>
+        <label for="age" id="number-label">Age <input id="number" type="number" min="13" max="120" placeholder="Age"/></label>
+
+  <!-- Dropdown input -->      
+        <label for="dropdown"> Which option best describes your current role?
+          <select id="dropdown" name="dropdown">
+            <option value="">Select one</option>
+            <option value="1">Student</option>
+            <option value="2">Full-Time</option>
+            <option value="3">Part-Time</option>
+            <option value="4">Rather not say</option>
+            <option value="5">Other</option>
+          </select>
+        </label>
+
+  <!-- Radio input -->
+        <label><input type="radio" class="inline" name="recommend" value="Yes" checked/>Yes</label>
+        <label><input type="radio" class="inline" name="recommend" value="No" checked/>No</label>
+        <label><input type="radio" class="inline" name="recommend" value="Maybe" checked/>Maybe</label>
+
+  <!-- Checkbox input -->
+        <label> What did you learn?</label>
+          <input id="html" class="inline"  type="checkbox" name="learn" value="html"> <label class="inline" for="html">HTML</label>
+          <input id="css" class="inline"  type="checkbox" name="learn" value="css"> <label class="inline" for="css">CSS</label>
+          <input id="java" class="inline" type="checkbox" name="learn" value="java"> <label class="inline" for="java">Java</label>
+          <input id="javascript" class="inline"  type="checkbox" name="learn" value="javascript"> <label class="inline" for="javascript">JavaScript</label>
+
+  <!-- Text area -->
+        <label for="comments">Additional Comments or suggestions?</label>
+        <textarea id="comments" rows="5" cols="50" placeholder="Enter your comment or suggestions here..."></textarea>
+
+  <!-- Submit button-->
+        <button id="submit" type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
